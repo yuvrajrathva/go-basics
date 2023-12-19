@@ -1,6 +1,10 @@
 package main
-import "fmt"
+import (
+	"fmt"
+	"modules.com/packs"
+)
 
 func main(){
-	fmt.Println("Hello, Golang!")
+	message := packs.Hello("Hello Golang!!!")
+	fmt.Printf(message)
 }
